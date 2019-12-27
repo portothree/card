@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html class="no-js" lang="">
+  <head>
+    <meta charset="utf-8" />
+    <title></title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Courier+Prime&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <!--[if IE]>
+      <p class="browserupgrade">
+        You are using an <strong>outdated</strong> browser. Please
+        <a href="https://browsehappy.com/">upgrade your browser</a> to improve
+        your experience and security.
+      </p>
+    <![endif]-->
+
+    <div class="card-wrapper">
+      <div class="card card__front">
+        <div class="card__chip"></div>
+        <div class="card__info">
+          <div class="card__number">5344 7777 3333 3333</div>
+          <div class="card__expirydate">01/26</div>
+          <div class="card__owner">Nome Impresso</div>
+        </div>
+        <img
+          class="card__logo card__logo--master"
+          src="images/master.svg"
+          alt="MasterCard Logo"
+        />
+        <img
+          class="card__logo card__logo--visa"
+          src="images/visa.svg"
+          alt="Visa Logo"
+        />
+      </div>
+      <div class="card card__back">
+        <div class="card__strip"></div>
+        <div class="card__signature"></div>
+        <div class="card__ccv">333</div>
+      </div>
+    </div>
+
+    <input class="card-input" type="text" />
+    <script src="scripts/creditcard.min.js"></script>
+    <script src="scripts/main.js"></script>
+  </body>
+</html>

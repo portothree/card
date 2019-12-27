@@ -1,0 +1,117 @@
+.card-wrapper {
+  margin: 100px 0 100px 0;
+  font-family: Courier Prime;
+}
+
+.card {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  width: 425px;
+  height: 270px;
+  margin-bottom: 50px;
+  color: #fff;
+  border-radius: 20px;
+  box-sizing: border-box;
+  background-color: #dbdbdb;
+}
+
+.card--master {
+  display: none;
+  background-color: #16161a;
+}
+
+.card--visa {
+}
+
+.card .card__info {
+  color: #f2f2f2;
+  padding: 65px 0 15px;
+}
+
+.card .card__info .card__number {
+  font-size: 30px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.card .card__info .card__expirydate {
+  font-size: 14px;
+  text-align: center;
+}
+
+.card .card__info .card__owner {
+  text-align: left;
+  text-transform: uppercase;
+  font-size: 30px;
+  font-weight: bold;
+  margin: 10px;
+}
+
+.card .card__logo {
+  width: 80px;
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+}
+
+.card .card__logo--master {
+  display: none;
+}
+
+.card .card__logo--visa {
+  display: none;
+}
+
+.card .card__strip {
+  background: #010101;
+  height: 50px;
+  margin-bottom: 30px;
+}
+
+.card .card__signature {
+  float: left;
+  width: 65%;
+  height: 40px;
+  margin-left: 10px;
+  background: #999;
+}
+
+.card .card__ccv {
+  float: left;
+  margin-top: 5px;
+  padding: 7px;
+  background: #fff;
+  color: #111;
+  line-height: 1;
+}
+
+.card .card__chip {
+  width: 50px;
+  height: 35px;
+  border-radius: 5px;
+  background: #ccc;
+  position: relative;
+  top: 60px;
+  left: 10px;
+}
+
+.card .card__chip:before {
+  content: " ";
+  display: block;
+  width: 70%;
+  height: 60%;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  background: lighten(#ccc, 5%);
+  position: absolute;
+  top: (100% - 60%) / 2;
+}
+
+.card__front {
+  padding: 20px;
+}
+
+.card__back {
+  padding: 20px 0 20px 0;
+}
